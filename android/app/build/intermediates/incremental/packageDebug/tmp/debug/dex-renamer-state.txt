@@ -1,0 +1,4 @@
+#Fri Sep 20 13:34:36 CST 2019
+base.0=/Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

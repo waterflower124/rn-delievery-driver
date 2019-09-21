@@ -1,0 +1,45 @@
+dependencies: \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/node_modules/react-native-google-places/ios/RCTConvert+RNGPAutocompleteTypeFilter.m \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Target\ Support\ Files/react-native-google-places/react-native-google-places-prefix.pch \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/node_modules/react-native-google-places/ios/RCTConvert+RNGPAutocompleteTypeFilter.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-DevSupport/React/RCTInspectorDevServerHelper.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-DevSupport/React/RCTPackagerConnection.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Private/yoga/Yoga.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Private/yoga/YGEnums.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Private/yoga/YGMacros.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/Headers/Private/yoga/YGValue.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h \
+  /Volumes/DataDrive/Project/2019/9.19_china/new/GadeliDriverApp/ios/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h

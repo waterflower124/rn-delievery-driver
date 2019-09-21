@@ -1,0 +1,13 @@
+
+export const LOGIN_ATTEPT = 'LOGIN_ATTEPT';
+
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+
+export const LOGIN_FAILED = 'LOGIN_FAILED'
+
+
+export const LOGOUT_ATTEPT =  'LOGOUT_ATTEPT'
+
+export const FACEBOOK_LOGOUT_ATTEPT = 'FACEBOOK_LOGOUT_ATTEPT';
+
+export const FACEBOOK_LOGIN = 'FACEBOOK_LOGIN'
