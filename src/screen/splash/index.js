@@ -63,24 +63,29 @@ class SplashScreen extends React.Component {
     await request_location_runtime_permission();
   }
 
-  componentDidMount() {
-    let obj = Storage.getItem(
-      "@gadelidriver:conductor"
-    );
-    console.log("user_id====>", obj.token);
+  async componentDidMount() {
 
-    if (
-      obj.token == undefined ||
-      obj.token == ""
-    ) {
-      this.props.navigation.navigate("LoginPage");
-      //Alert.alert("LoginPage");
-    } else {
-      this.props.navigation.navigate(
-        "OrderRequest"
+    try {
+      let obj = Storage.getItem(
+        "@gadelidriver:conductor"
       );
-      //Alert.alert("OrderRequest");
+      // console.log("user_id====>", obj.token);
+          if (
+            !obj || obj.token == undefined ||
+            obj.token == ""
+          ) {
+            this.props.navigation.navigate("LoginPage");
+            //Alert.alert("LoginPage");
+          } else {
+            this.props.navigation.navigate(
+              "OrderRequest"
+            );
+            //Alert.alert("OrderRequest");
+          }
+    } catch (error) {
+      console.log(error);
     }
+    
 
     // checkPermission("android.permission.ACCESS_FINE_LOCATION").then(
     //   result => {

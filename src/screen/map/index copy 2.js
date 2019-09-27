@@ -119,7 +119,7 @@ class MapScreen extends React.Component {
             }
           })
           .catch(error => {
-            console.error(error);
+            console.log(error);
             this.setState({ isLoading: false });
           });
       }
@@ -153,7 +153,9 @@ class MapScreen extends React.Component {
         number: phone,
         prompt: false
       };
-      call(args).catch(console.error);
+      call(args).catch((error) => {
+        console.log(error);
+      });
     }
   }
   getMapRegion = () => ({

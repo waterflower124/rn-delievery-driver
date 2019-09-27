@@ -68,6 +68,7 @@ import DriverPaidScreen from "./src/screen/driver_paid_screen";
 import SummaryPage from "./src/screen/summary";
 import PayDetailsScreen from "./src/screen/paydetail";
 import ForgotPasswordPage from "./src/screen/forgotpassword";
+import { initialize } from './src/utility/firebase';
 
 const MisOrdenesStack = createStackNavigator({
   OrderRequest: {
@@ -477,7 +478,8 @@ export default class AppRoot extends Component{
 	// }
    async componentDidMount(){
 	//  this.onit()
-	//  this.createNotification()
+  //  this.createNotification()
+    initialize();
    }
   
    componentWillUnmount(){

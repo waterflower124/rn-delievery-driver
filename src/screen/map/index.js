@@ -3,13 +3,15 @@ import { Container, View, Text, Content, Footer } from "native-base";
 import { Image, Rating, Button } from "react-native-elements";
 import { Platform, TouchableOpacity, StyleSheet } from "react-native";
 import MapView, { Polyline, Marker, AnimatedRegion } from "react-native-maps";
-//import firebase from "./../../firebase";
+import _ from 'lodash'
+// import firebase from "./../../firebase";
 import call from "react-native-phone-call";
+import { getUserLocation } from '../../utility/firebase';
 
 // import { addposition } from "./ItemService";
 
 const LATITUDEDELTA = 0.0922;
-const LONGITUDEDELTA = 0.0922;
+const LONGITUDEDELTA = 0.0421;
 const img_vehiculo = [
   "",
   require("../../assets/02.png"),
@@ -22,11 +24,21 @@ class MapScreen extends React.Component {
     super(props);
     //    this.ref = firebase.firestore().collection("Maps");
     this.state = {
+      marker: {
+        latitude: -18.0095704,
+        longitude: -70.2475725
+      },
+      initialRegion: {
+        latitude: -18.0095704,
+        longitude: -70.2475725,
+        latitudeDelta: LATITUDEDELTA,
+        longitudeDelta: LONGITUDEDELTA
+      },
       region: {
-        latitude: null,
-        longitude: null,
-        latitudeDelta: null,
-        longitudeDelta: null
+        latitude: -18.0095704,
+        longitude: -70.2475725,
+        latitudeDelta: LATITUDEDELTA,
+        longitudeDelta: LONGITUDEDELTA
       },
       id: "",
       tipo_pedido_id: "",
@@ -116,7 +128,8 @@ class MapScreen extends React.Component {
   //   this.getPlaces();
   // }
   async componentDidMount() {
-    this.get_pedido_storeage();
+    // this.get_pedido_storeage();
+    getUserLocation('test_user', (obj) => this.onLocation(obj));
     try {
       const value = await AsyncStorage.getItem("@gadeli:idpedido");
       if (!(value == null || value == "" || value == undefined)) {
@@ -170,7 +183,7 @@ class MapScreen extends React.Component {
             }
           })
           .catch(error => {
-            console.error(error);
+            console.log(error);
             this.setState({ isLoading: false });
           });
       }
@@ -179,22 +192,41 @@ class MapScreen extends React.Component {
     }
   }
 
-  onRegionChange(region) {
+  onLocation = (obj) => {
+    console.warn('onLocation', JSON.stringify(obj.location));
+    // alert(JSON.stringify(obj));
+    const { region: oRegion } = this.state;
+    const region = {
+      ...oRegion,
+      latitude: obj.location.latitude,
+      longitude: obj.location.longitude,
+      // latitudeDelta: 0.0922,
+      // longitudeDelta: 0.0421
+    };
+    const marker = {
+      latitude: obj.location.latitude,
+      longitude: obj.location.longitude,
+    };
+    this.setState({ region, marker });
+  };
+
+  onRegionChange = (region) => {
     // this.setState({ region });
-    navigator.geolocation.getCurrentPosition(
-      position => {
-        const initialPosition = JSON.stringify(position);
-        this.setState({ latitude: initialPosition });
-      },
-      error => alert(error.message),
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
-    );
-    this.watchID = navigator.geolocation.watchPosition(position => {
-      const lastPosition = JSON.stringify(position);
-      this.setState({ longitude: lastPosition });
-    });
+    // navigator.geolocation.getCurrentPosition(
+    //   position => {
+    //     const initialPosition = JSON.stringify(position);
+    //     this.setState({ latitude: initialPosition });
+    //   },
+    //   error => alert(error.message),
+    //   { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+    // );
+    // this.watchID = navigator.geolocation.watchPosition(position => {
+    //   const lastPosition = JSON.stringify(position);
+    //   this.setState({ longitude: lastPosition });
+    // });
   }
-  PhoneCall() {
+
+  PhoneCall = () => {
     //handler to make a call
     let phone = this.state.telefono;
     if (phone == "" || phone == null) {
@@ -204,9 +236,12 @@ class MapScreen extends React.Component {
         number: phone,
         prompt: false
       };
-      call(args).catch(console.error);
+      call(args).catch((error) => {
+        console.log(error);
+      });
     }
   }
+
   render() {
     return (
       <View style={{ flex: 1, width: "100%" }}>
@@ -263,6 +298,13 @@ class MapScreen extends React.Component {
               title={"Test Marker"}
               description={"This is a description of the marker"}
             /> */}
+            <Marker
+            // draggable
+              coordinate={this.state.marker}
+            // onDragEnd={e => alert(JSON.stringify(e.nativeEvent.coordinate))}
+              title={"Test Marker"}
+              description={"This is a description of the marker"}
+            />
           </MapView>
         </View>
         <Content padder></Content>

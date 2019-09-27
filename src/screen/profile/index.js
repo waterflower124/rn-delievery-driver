@@ -90,7 +90,7 @@ async Cargar_datos(){
       //}
     })
     .catch(error => {
-        console.error(error);
+      console.log(error);
       });
   }
   )
@@ -122,7 +122,7 @@ async Cargar_datos(){
   <TouchableHighlight
           style={[styles.profileImgContainer, { borderColor: 'white', borderWidth:1 }]}
         >
-    <Image source={require("../../assets/logo.jpg")} style={styles.profileImg} />
+    <Image source={require("../../assets/logo2.jpg")} style={styles.profileImg} />
 </TouchableHighlight>
 </View>
 

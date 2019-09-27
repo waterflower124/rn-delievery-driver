@@ -58,7 +58,7 @@ class MyReview extends React.Component {
         this.setState({ isLoading:false });
       })
       .catch(error => {
-          console.error(error);
+        console.log(error);
         });
       }
       )

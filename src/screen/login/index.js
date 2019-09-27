@@ -24,6 +24,7 @@ import { AccessToken, LoginManager, LoginButton } from "react-native-fbsdk";
 // import GetLocation from "react-native-get-location";
 import { SOCIAL_LOGIN_URL } from "../../utility/AppConstant";
 import AsyncStorage from "@react-native-community/async-storage";
+import { configure, removeAllListeners } from "../../utility/Geolocation";
 
 //import { JsonFormatter } from "tslint/lib/formatters";
 
@@ -31,8 +32,8 @@ class LoginPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "",//"jmcalderon235@gmail.com",
-      password: "",//"123456",
+      email: __DEV__ ? "jmcalderon235@gmail.com" : "",//"jmcalderon235@gmail.com",
+      password: __DEV__ ? "123456" : "",//"123456",
       isLoading: false,
       lat: "",
       long: "",
@@ -56,6 +57,11 @@ class LoginPage extends Component {
   async componentDidMount() {
     //await this.removeItemValue("@gadelidriver:conductor");
     //Alert.alert("Eliminaron el store");
+    configure({ driverId: 'test_driver'});
+  }
+
+  componentWillUnmount() {
+    removeAllListeners();
   }
 
   handleEmailChange = email => {
@@ -89,6 +95,7 @@ class LoginPage extends Component {
       })
         .then(response => response.json())
         .then(responseJson => {
+          console.log('responseJson', responseJson);
           if (responseJson.token !== "") {
             Toast.show("Datos Correctos", Toast.LONG);
               this.storeSessionToken(responseJson).then( ()=>{
@@ -104,7 +111,7 @@ class LoginPage extends Component {
           }
         })
         .catch(error => {
-          console.error(error);
+          console.log(error);
           this.setState({ isLoading: false });
         });
 
@@ -172,7 +179,7 @@ class LoginPage extends Component {
                   borderRadius: 5
                 }}
                 placeholder="Email/Celular"
-
+                value={email}
                 placeholderTextColor="#888888"
                 keyboardType="email-address"
                 returnKeyType="next"
@@ -198,7 +205,7 @@ class LoginPage extends Component {
                 }}
                 placeholder="Contraseña"
                 placeholderTextColor="#888888"
-
+                value={password}
                 onChangeText={this.handlePasswordChange}
                 secureTextEntry
                 returnKeyType="done"

@@ -53,6 +53,8 @@ export function login(data:Object){
         }
 
 
+      }).catch((error) => {
+        console.log(error);
       })
 
     // export function facebookLogin(data : Object){

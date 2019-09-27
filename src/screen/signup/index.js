@@ -123,7 +123,7 @@ class RegisterPage extends React.Component {
           });
         })
         .catch(error => {
-          console.error(error);
+          console.log(error);
         });
 
       // this.props.signup(this.state.dni,this.state.full_name,this.state.address,this.state.department,this.state.province,this.state.district,this.state.email,this.state.phone_number,this.state.password,this.state.license_number,this.state.license_category,this.state.txt_date).then(() => {

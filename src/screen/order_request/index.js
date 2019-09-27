@@ -20,7 +20,7 @@ import AsyncStorage from "@react-native-community/async-storage";
 import { Button } from "react-native-elements";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
-console.disableYellowBox = true;
+// console.disableYellowBox = true;
 //var SoundPlayer = require("react-native-sound");
 import SoundPlayer from "react-native-sound";
 var song = null;
@@ -41,7 +41,7 @@ class OrderRequest extends React.Component {
         });
       })
       .catch(error => {
-        console.error(error);
+        console.log(error);
       });
   };
   ListViewItemSeparator = () => {
@@ -57,6 +57,7 @@ class OrderRequest extends React.Component {
     );
   };
   componentDidMount() {
+    console.log('componentDidMount','OrderRequest' )
     this.Get_DatosConductor()
       .then(val => {
         if (!(val.token == undefined || val.token == "")) {
@@ -132,7 +133,7 @@ class OrderRequest extends React.Component {
         });
       })
       .catch(error => {
-        console.error(error);
+        console.log(error);
       });
 
     this.setState({ dataSource: [] });

@@ -143,7 +143,7 @@ class DrawerContent extends Component {
               ]}
             >
               <Image
-                source={require("../../assets/logo.jpg")}
+                source={require("../../assets/logo2.jpg")}
                 style={styles.profileImg}
               />
             </TouchableOpacity>

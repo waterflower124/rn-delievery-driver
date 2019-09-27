@@ -17,6 +17,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* GadeliDriverAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GadeliDriverAppTests.m */; };
+		65483E272EC040D1B5AFDECA /* libRCTBackgroundGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB8D1E5C328486589AF6A08 /* libRCTBackgroundGeolocation.a */; };
 		78236FE440E5A577CEDE8F8D /* libPods-GadeliDriverApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83BB57FB66DF790AD4D8D67 /* libPods-GadeliDriverApp-tvOSTests.a */; };
 		B1B5727513E0FB8F873D5C5B /* libPods-GadeliDriverApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D09180BC5EA9330053545F /* libPods-GadeliDriverApp-tvOS.a */; };
 		E7FF087D23479F87EF140986 /* libPods-GadeliDriverAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83349A5C6DA12A37353D42E4 /* libPods-GadeliDriverAppTests.a */; };
@@ -36,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "GadeliDriverApp-tvOS";
+		};
+		BCD54DE52338AB8400334CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E403C75B0DD40A69447247C /* RCTBackgroundGeolocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418F75461D02DC3D0045FEA0;
+			remoteInfo = RCTBackgroundGeolocation;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,6 +65,7 @@
 		2D02E47B1E0B4A5D006451C7 /* GadeliDriverApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GadeliDriverApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* GadeliDriverApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GadeliDriverApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3797157541C9AE876138AF0F /* Pods-GadeliDriverAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GadeliDriverAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GadeliDriverAppTests/Pods-GadeliDriverAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E403C75B0DD40A69447247C /* RCTBackgroundGeolocation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTBackgroundGeolocation.xcodeproj; path = "../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation.xcodeproj"; sourceTree = "<group>"; };
 		46EA69FF7CC42E923F1A0DDC /* Pods-GadeliDriverApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GadeliDriverApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-GadeliDriverApp-tvOS/Pods-GadeliDriverApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		4E9BB7C9A9C537339088679F /* Pods-GadeliDriverApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GadeliDriverApp.release.xcconfig"; path = "Target Support Files/Pods-GadeliDriverApp/Pods-GadeliDriverApp.release.xcconfig"; sourceTree = "<group>"; };
 		6BADBE83D44C6AF2D1ADF697 /* libPods-GadeliDriverApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GadeliDriverApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +73,7 @@
 		83349A5C6DA12A37353D42E4 /* libPods-GadeliDriverAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GadeliDriverAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87161529C7748A9699B3FD61 /* Pods-GadeliDriverApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GadeliDriverApp.debug.xcconfig"; path = "Target Support Files/Pods-GadeliDriverApp/Pods-GadeliDriverApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D83BB57FB66DF790AD4D8D67 /* libPods-GadeliDriverApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GadeliDriverApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB8D1E5C328486589AF6A08 /* libRCTBackgroundGeolocation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBackgroundGeolocation.a; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0D09180BC5EA9330053545F /* libPods-GadeliDriverApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GadeliDriverApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				116CD6B96C454C046DAAE472 /* libPods-GadeliDriverApp.a in Frameworks */,
+				65483E272EC040D1B5AFDECA /* libRCTBackgroundGeolocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +159,6 @@
 				3797157541C9AE876138AF0F /* Pods-GadeliDriverAppTests.debug.xcconfig */,
 				02E3A5C106D8EF6D64E31202 /* Pods-GadeliDriverAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -168,6 +178,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3E403C75B0DD40A69447247C /* RCTBackgroundGeolocation.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				2704683FCE649AAD3D9AA5BF /* Pods */,
+				BCD54DE02338AB8300334CBD /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -194,6 +206,22 @@
 				00E356EE1AD99517003FC87E /* GadeliDriverAppTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* GadeliDriverApp-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* GadeliDriverApp-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCD54DE02338AB8300334CBD /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				DDB8D1E5C328486589AF6A08 /* libRCTBackgroundGeolocation.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		BCD54DE22338AB8400334CBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCD54DE62338AB8400334CBD /* libRCTBackgroundGeolocation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,7 +314,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -309,12 +337,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BCD54DE22338AB8400334CBD /* Products */;
+					ProjectRef = 3E403C75B0DD40A69447247C /* RCTBackgroundGeolocation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* GadeliDriverApp */,
@@ -324,6 +359,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BCD54DE62338AB8400334CBD /* libRCTBackgroundGeolocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTBackgroundGeolocation.a;
+			remoteRef = BCD54DE52338AB8400334CBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -642,9 +687,17 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = GadeliDriverAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -662,9 +715,17 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = GadeliDriverAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -683,6 +744,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = GadeliDriverApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -702,6 +767,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = GadeliDriverApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -728,8 +797,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = "GadeliDriverApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -756,8 +833,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = "GadeliDriverApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -783,8 +868,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = "GadeliDriverApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -810,8 +903,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@mauron85/react-native-background-geolocation/ios/RCTBackgroundGeolocation/**",
+				);
 				INFOPLIST_FILE = "GadeliDriverApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

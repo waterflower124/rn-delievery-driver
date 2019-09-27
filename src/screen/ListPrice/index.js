@@ -19,7 +19,7 @@ import {
 import AsyncStorage from "@react-native-community/async-storage";
 import { Button } from "react-native-elements";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-console.disableYellowBox = true;
+// console.disableYellowBox = true;
 class OrderRequest extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +36,7 @@ class OrderRequest extends React.Component {
         });
       })
       .catch(error => {
-        console.error(error);
+        console.log(error);
       });
   };
   ListViewItemSeparator = () => {
