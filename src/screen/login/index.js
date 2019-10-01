@@ -57,11 +57,11 @@ class LoginPage extends Component {
   async componentDidMount() {
     //await this.removeItemValue("@gadelidriver:conductor");
     //Alert.alert("Eliminaron el store");
-    configure({ driverId: 'test_driver'});
+    // configure({ driverId: 'test_driver'});
   }
 
   componentWillUnmount() {
-    removeAllListeners();
+    // removeAllListeners();
   }
 
   handleEmailChange = email => {

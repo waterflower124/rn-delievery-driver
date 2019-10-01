@@ -23,6 +23,7 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 // console.disableYellowBox = true;
 //var SoundPlayer = require("react-native-sound");
 import SoundPlayer from "react-native-sound";
+import { configure, removeAllListeners } from "../../utility/Geolocation";
 var song = null;
 //import Sound from "react-native-sound";
 class OrderRequest extends React.Component {
@@ -72,9 +73,13 @@ class OrderRequest extends React.Component {
 
     this.intervalId = setInterval(() => this.onRefresh(), 5000);
     this.onRefresh(); // also load one immediately
+    configure({ driverId: 'test_driver'});
   }
   componentWillUnmount() {
-    clearInterval(this.intervalId);
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+    removeAllListeners();
   }
   onPress() {
     //this.setState({ dataSource: [] });
